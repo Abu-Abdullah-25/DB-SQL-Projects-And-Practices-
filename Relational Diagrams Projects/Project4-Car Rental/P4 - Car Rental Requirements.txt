@@ -1,0 +1,19 @@
+Create Relational Schema for the following project: Here are the database requirements for a Car Rental:
+1. Customer Management:
+- The system should save customers' personal information: Name, contact information, and a driver's license number.
+2. Vehicles Information:
+- The system should maintain up-to-date information on available vehicles, including make, model, year, mileage, rental rates, fuel type (Gas, Electric, etc.), plate number, and vehicle category (4x4, Sedan, etc.).
+- Vehicle Fuel Types:
+  - Gasoline (Petrol)
+  - Diesel
+  - Electric
+  - Hybrid
+3. Vehicle Booking:
+- When a customer rents a vehicle, the system should keep booking information: customer who rented the vehicle, rental start date, rental end date, pickup location, drop-off location, initial rental days, initial total due amount, and initial vehicle check notes.
+4. Rental Transaction:
+- Customers should pay for the rent, and a transaction should be logged in the system to keep the following information: Payment Details, initial paid amount.
+ProgrammingAdvices.com© Copyright 2023 Project 1 – CarRental(Requirements)
+5. Vehicle Return:
+- When a customer returns a vehicle, the system should calculate and record the Actual Return Date, calculate actual rental days, record the final vehicle check notes, and specify if there are additional charges.
+- The original transaction should be updated to record all differences in reservation, calculate the actual final amount due, and calculate the remaining amount. If the customer needs a refund, it should be paid back.
+- Save the current mileage and calculate the consumed mileage by the customer during the rental period.
