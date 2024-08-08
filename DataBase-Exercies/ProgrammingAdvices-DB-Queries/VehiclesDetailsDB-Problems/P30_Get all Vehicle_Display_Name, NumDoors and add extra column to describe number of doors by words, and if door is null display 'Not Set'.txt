@@ -1,0 +1,17 @@
+
+Select VehicleDetails.Vehicle_Display_Name , NumDoors ,
+
+Case
+	When NumDoors = 0 Then 'Zero Doors'
+	When NumDoors = 1 Then 'One Doors'
+	When NumDoors = 2 Then 'Two Doors'
+	When NumDoors = 3 Then 'Three Doors'
+	When NumDoors = 4 Then 'Four Doors'
+	When NumDoors = 5 Then 'Five Doors'
+	When NumDoors = 6 Then 'Six Doors'
+	When NumDoors = 8 Then 'Eight Doors'
+	When NumDoors is Null Then 'Not Set'
+	Else 'Unkown'
+End As DoorsDescription
+
+From VehicleDetails;

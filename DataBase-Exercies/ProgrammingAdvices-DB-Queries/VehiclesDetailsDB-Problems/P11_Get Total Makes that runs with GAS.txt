@@ -1,0 +1,7 @@
+Select Count(*) As TotalMakesRunOnGas
+From (
+	Select Distinct Makes.Make , FuelTypes.FuelTypeName
+	From VehicleDetails
+	INNER JOIN Makes ON  VehicleDetails.MakeID = Makes.MakeID
+	INNER JOIN FuelTypes ON VehicleDetails.FuelTypeID = FuelTypes.FuelTypeID
+	Where (FuelTypes.FuelTypeName = N'GAS'))R1

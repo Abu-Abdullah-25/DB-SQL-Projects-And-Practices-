@@ -1,0 +1,6 @@
+Select Makes.Make,Count(*) as NumberOFVehicles
+From VehicleDetails
+Inner Join Makes On VehicleDetails.MakeID = Makes.MakeID
+Where (VehicleDetails.Year Between 1950 and 2000)
+Group by Makes.Make
+Order by NumberOFVehicles DESC;

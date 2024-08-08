@@ -1,0 +1,19 @@
+Select Distinct Makes.Make , Count(*) as NumberOfVehicles
+From VehicleDetails
+INNER JOIN Makes ON VehicleDetails.MakeID = Makes.MakeID
+Group by Makes.Make
+having Count(*) > 20000
+order by NumberOfVehicles DESC;
+
+
+
+----Another Way : Without using have
+--Select * From
+--(
+--	Select Distinct Makes.Make , Count(*) as NumberOfVehicles
+--	From VehicleDetails
+--	INNER JOIN Makes ON VehicleDetails.MakeID = Makes.MakeID
+--	Group by Makes.Make
+--)R1
+--Where R1.NumberOfVehicles > 20000
+--order by NumberOfVehicles DESC;
